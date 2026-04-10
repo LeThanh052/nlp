@@ -78,5 +78,45 @@
       0,
       138
     ]
+  ],
+  "LogisticRegression + Word2Vec Mean": [
+    [
+      248,
+      1
+    ],
+    [
+      0,
+      138
+    ]
+  ],
+  "LinearSVC + Word2Vec Mean": [
+    [
+      248,
+      1
+    ],
+    [
+      0,
+      138
+    ]
+  ],
+  "LogisticRegression + Word2Vec Mean Tuned": [
+    [
+      248,
+      1
+    ],
+    [
+      1,
+      137
+    ]
+  ],
+  "LinearSVC + Word2Vec Mean Tuned": [
+    [
+      246,
+      3
+    ],
+    [
+      0,
+      138
+    ]
   ]
 }
