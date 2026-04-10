@@ -1,0 +1,77 @@
+{
+  "dataset_path": "D:\\nlp\\vietnamese_news_2000_new.csv",
+  "raw_rows": 1949,
+  "clean_rows": 1934,
+  "label_counts": {
+    "0": 1246,
+    "1": 688
+  },
+  "tokenizer_used": "underthesea",
+  "max_words": 20000,
+  "max_len": 300,
+  "train_size": 1547,
+  "test_size": 387,
+  "cnn": {
+    "accuracy": 0.9819,
+    "precision_class_1": 0.9645,
+    "recall_class_1": 0.9855,
+    "f1_class_1": 0.9749,
+    "confusion_matrix": [
+      [
+        244,
+        5
+      ],
+      [
+        2,
+        136
+      ]
+    ]
+  },
+  "lstm": {
+    "accuracy": 0.9432,
+    "precision_class_1": 0.9754,
+    "recall_class_1": 0.8623,
+    "f1_class_1": 0.9154,
+    "confusion_matrix": [
+      [
+        246,
+        3
+      ],
+      [
+        19,
+        119
+      ]
+    ]
+  },
+  "sample_predictions": {
+    "texts": [
+      "gia vang va chung khoan hom nay tang manh sau phien giao dich tich cuc",
+      "tran derby toi nay thu hut dong dao nguoi ham mo bong da"
+    ],
+    "cnn_probabilities": [
+      0.828,
+      0.3365
+    ],
+    "lstm_probabilities": [
+      0.0603,
+      0.0603
+    ]
+  },
+  "classic_comparison": {
+    "best_tfidf": {
+      "experiment": "LogisticRegression + TF-IDF Bigram",
+      "accuracy": 0.9974,
+      "f1_class_1": 0.9964
+    },
+    "best_word2vec": {
+      "experiment": "LogisticRegression + Word2Vec Mean",
+      "accuracy": 0.9974,
+      "f1_class_1": 0.9964
+    }
+  },
+  "summary": {
+    "best_deep_learning_model": "CNN",
+    "best_deep_learning_f1_class_1": 0.9749,
+    "note": "CNN tot hon LSTM tren dataset nay, nhung van thap hon TF-IDF Bigram va Word2Vec Mean."
+  }
+}

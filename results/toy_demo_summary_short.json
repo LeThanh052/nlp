@@ -1,0 +1,99 @@
+{
+  "dataset_type": "toy_demo",
+  "num_texts": 8,
+  "train_size": 6,
+  "test_size": 2,
+  "max_words": 1000,
+  "max_len": 10,
+  "train_texts": [
+    "co phieu ngan hang tang manh",
+    "ca si ra mat album moi",
+    "thi truong chung khoan giam diem",
+    "loi nhuan doanh nghiep vuot ky vong",
+    "doi tuyen bong da thang tran",
+    "bo phim moi dat doanh thu phong ve cao"
+  ],
+  "test_texts": [
+    "du lich he rat nhon nhip",
+    "doanh thu quy nay tang cao"
+  ],
+  "example_sequence_train": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "example_sequence_test": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "example_padding_train": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cnn": {
+    "accuracy": 0.5,
+    "precision_class_1": 0.5,
+    "recall_class_1": 1.0,
+    "f1_class_1": 0.6667,
+    "confusion_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "lstm": {
+    "accuracy": 0.5,
+    "precision_class_1": 0.5,
+    "recall_class_1": 1.0,
+    "f1_class_1": 0.6667,
+    "confusion_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "new_text_predictions": {
+    "texts": [
+      "gia vang hom nay tang manh",
+      "tran chung ket bong da rat hap dan"
+    ],
+    "cnn_probabilities": [
+      0.6939,
+      0.6262
+    ],
+    "lstm_probabilities": [
+      0.6773,
+      0.6217
+    ]
+  },
+  "summary": {
+    "note": "Toy demo de hieu flow, khong dung de ket luan mo hinh nao tot hon.",
+    "best_model": "CNN = LSTM",
+    "best_f1_class_1": 0.6667
+  }
+}
