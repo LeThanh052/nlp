@@ -1,0 +1,10 @@
+﻿phase,group,experiment,description,representation,feature_count,accuracy,precision_class_1,recall_class_1,f1_class_1,macro_f1,weighted_f1,tn,fp,fn,tp
+validation,improvement,tfidf_logreg_balanced,Improvement 1 - class_weight balanced,tfidf,6745,0.9829,0.9717,0.981,0.9763,0.9815,0.983,185,3,2,103
+validation,baseline,bow_multinomial_nb,BoW unigram + MultinomialNB,bow,6745,0.9829,0.9808,0.9714,0.9761,0.9814,0.9829,186,2,3,102
+validation,baseline,tfidf_linear_svm,TF-IDF unigram + LinearSVC,tfidf,6745,0.9829,0.9808,0.9714,0.9761,0.9814,0.9829,186,2,3,102
+validation,improvement,tfidf_logreg_bigram_balanced_15k,Improvement 3 - bigram + class_weight + reduced features,tfidf,15000,0.9829,0.9808,0.9714,0.9761,0.9814,0.9829,186,2,3,102
+validation,baseline,bow_logistic_regression,BoW unigram + LogisticRegression,bow,6745,0.9795,0.9806,0.9619,0.9712,0.9776,0.9795,186,2,4,101
+validation,baseline,tfidf_logistic_regression,TF-IDF unigram + LogisticRegression,tfidf,6745,0.9795,0.9806,0.9619,0.9712,0.9776,0.9795,186,2,4,101
+validation,improvement,tfidf_logreg_bigram,Improvement 2 - unigram + bigram,tfidf,40000,0.9795,0.9806,0.9619,0.9712,0.9776,0.9795,186,2,4,101
+validation,baseline,bow_linear_svm,BoW unigram + LinearSVC,bow,6745,0.9761,0.9804,0.9524,0.9662,0.9739,0.976,186,2,5,100
+validation,baseline,tfidf_multinomial_nb,TF-IDF unigram + MultinomialNB,tfidf,6745,0.9693,0.98,0.9333,0.9561,0.9662,0.9691,186,2,7,98

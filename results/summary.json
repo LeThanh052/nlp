@@ -1,0 +1,21 @@
+{
+  "raw_rows": 1949,
+  "clean_rows": 1934,
+  "label_counts": {
+    "0": 1246,
+    "1": 688
+  },
+  "best_model": {
+    "experiment": "LogisticRegression + TF-IDF Bigram",
+    "model": "LogisticRegression",
+    "vectorizer": "TF-IDF Bigram",
+    "accuracy": 0.9974,
+    "precision_class_1": 0.9928,
+    "recall_class_1": 1.0,
+    "f1_class_1": 0.9964,
+    "tn": 248,
+    "fp": 1,
+    "fn": 0,
+    "tp": 138
+  }
+}
